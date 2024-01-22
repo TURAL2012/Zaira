@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+.sect1 {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  .img {
+    width: 90%;
+    height: 85%;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+
+    img {
+      width: 100%;
+      transition: 0.5s all ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .main {
+    width:  fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    align-items: center;
+    padding: 305px 0px 0px 0px;
+    .icons {
+      display: flex;
+      .box {
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+
+        i {
+          color: #bacce1;
+          margin-right: 5px;
+          margin-bottom: 5px;
+          font-size: 14px;
+        }
+
+        h4 {
+          color: #bacce1;
+          font-size: 14px;
+        }
+      }
+    }
+
+    button {
+      width: 83px;
+      height: 26px;
+      background-color: #f4796c;
+      border: none;
+      outline: none;
+      color: white;
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+      border-radius: 3px;
+transition: all .3s ease;
+      &:hover {
+        background-color: #183354;
+      }
+    }
+    h3 {
+      color: white;
+      font-family: "Manrope", sans-serif;
+      text-align: center;
+      position: relative;
+
+      &:hover {
+        &::after {
+          width: 33%;
+        }
+
+        &::before {
+          width: 100%;
+        }
+      }
+      &::before {
+        content: "";
+        background-color: white;
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        transition: all 0.3s;
+      }
+
+      &::after {
+        content: "";
+        background-color: white;
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        transition: all 0.3s;
+        margin-left: 210px;
+      }
+    }
+  }
+}
